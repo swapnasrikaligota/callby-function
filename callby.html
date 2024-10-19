@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+          function opr(n1, n2, call) {
+            call(n1, n2);
+        }
+        // call back function
+        function add(n1, n2) {
+            console.log(n1 + n2);
+        }
+        const sub = (n1, n2) => {
+            console.log(n1 - n2);
+        }
+        const mul = (n1, n2) => {
+            console.log(n1 * n2);
+        }
+        const div = (n1, n2) => {
+            console.log(n1 / n2);
+        }
+        opr(5, 6, add);
+        opr(5, 6, sub);
+        opr(5, 6, mul);
+        opr(5, 6, div);
+
+       
+    </script>
+</body>
+</html>
